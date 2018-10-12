@@ -1,11 +1,12 @@
 {
   "name": "converter",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha --reporter spec",
-    "start": "node ./app/server.js"
+    "start": "node ./app/server.js",
+    "release": "npm-version-up"
   },
   "config": {
     "main_class": "./app/server.js",
@@ -19,6 +20,7 @@
     "express": "^4.16.3",
     "mocha": "^5.2.0",
     "request": "^2.88.0",
-    "build-jar": "^1.0.0"
+    "build-jar": "^1.0.0",
+    "npm-version-up": "latest"
   }
 }
